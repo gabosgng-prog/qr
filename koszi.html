@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Köszi!</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        body {
+            background-color: #eeb001;
+            color: #000;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .container {
+            padding: 24px;
+            animation: fadeUp 0.8s ease-out forwards;
+            opacity: 0;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 12px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 24px;
+        }
+
+        a.button {
+            display: inline-block;
+            padding: 14px 28px;
+            background: #000;
+            color: #eeb001;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 999px;
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+
+        a.button:active {
+            transform: scale(0.96);
+        }
+
+        @keyframes fadeUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Köszi! 🙌</h1>
+        <p>Sikeresen megkaptuk az üzeneted.</p>
+        <a href="/" class="button">Vissza a főoldalra</a>
+    </div>
+</body>
+</html>
